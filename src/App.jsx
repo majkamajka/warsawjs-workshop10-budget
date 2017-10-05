@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
-import Stateless from './components/stateless.jsx';
-import Statefull from './components/statefull.jsx';
+import Counter from './components/counter.jsx';
+
+
 
 class App extends Component {
+
+
+
   render() {
     return (
       <div className="App">
 
-        <Stateless text='sdsdasd' />
-        <Statefull text='dsddsfsdf' />
+        <Counter initialCount={5}/>
 
 
       </div>
