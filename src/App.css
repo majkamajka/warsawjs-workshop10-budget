@@ -26,3 +26,18 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.transaction-card {
+  border: 1px dotted magenta;
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.close {
+  color: hotpink;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+}
