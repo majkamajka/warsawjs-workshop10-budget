@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Counter from './components/counter.jsx';
-import {TransactionCard} from './components';
+import {TransactionList} from './components';
 
 
 
@@ -42,7 +42,8 @@ class App extends Component {
       <div className="App">
 
         <Counter initialCount={5}/>
-        <TransactionCard name={this.state.transactions[0].description} value={this.state.transactions[0].value} date={this.state.transactions[0].date} category={this.state.transactions[0].category}/>
+        <TransactionList items={this.state.transactions} />
+
 
       </div>
     );
